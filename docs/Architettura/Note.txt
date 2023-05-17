@@ -1,0 +1,21 @@
+Anomaly outlier detection: controllare i picchi e scartarli (ordino i valori e ne tolgo n a sinistra ed n a destra).
+Hash creation: creare hash del blocco, salvarlo in un DB in locale (anche un file), appenderlo al blocco prima di mandarlo al cloud ed inviare alla blockchain (che è mock).
+
+docker-compose 2 container...
+
+Kube
+Microservizio 1: query dei dati dalla blockchain e dal cloud storage (servizio web).
+
+Gli altri sono mock:
+Microservizio 2: preso in input una serie di misurazioni, torna in output un valore medio.
+Microservizio 3: identificativo di un consumer/prosumer in input e torna un valore da 1 a 10.
+Microservizio 4: prende in input un id consumer con un certo valore di rating (coppia consumervalore) e decide di accettarlo o no (true false).
+
+una repo per la parte in casa
+una repo per la parte in cloud
+
+CI/CD non necessario
+
+non più di 10 pagine nella doc
+mettere nei readme dei git la procedura di setup
+
